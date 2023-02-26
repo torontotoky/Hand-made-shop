@@ -11,7 +11,7 @@ namespace HandMadeShop.dal.context
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlite("Data Source=helloapp.db");
+            options.UseSqlite("Data Source=HandMadeShop.db");
         }
 
         public DbSet<User> Users { get; set; }

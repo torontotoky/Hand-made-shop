@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HandMadeShop.dal.context.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20230220191545_init")]
+    [Migration("20230226134041_init")]
     partial class init
     {
         /// <inheritdoc />

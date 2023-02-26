@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hand made shop", "Hand made shop\Hand made shop.csproj", "{E381CADF-85E5-4124-AC55-C88FBD73C8CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hand made shop", "Hand made shop\Hand made shop.csproj", "{E381CADF-85E5-4124-AC55-C88FBD73C8CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandMadeShop.dal.entites", "HandMadeShop.dal.entites\HandMadeShop.dal.entites.csproj", "{C4A5B955-8018-4E30-8C23-5552DCEC83CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandMadeShop.dal.entites", "HandMadeShop.dal.entites\HandMadeShop.dal.entites.csproj", "{C4A5B955-8018-4E30-8C23-5552DCEC83CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandMadeShop.dal.context", "HandMadeShop.dal.context\HandMadeShop.dal.context.csproj", "{26B2A912-C0C9-48AC-8ED6-322D907DE7C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandMadeShop.dal.context", "HandMadeShop.dal.context\HandMadeShop.dal.context.csproj", "{26B2A912-C0C9-48AC-8ED6-322D907DE7C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandMadeShop.bll", "HandMadeShop.bll\HandMadeShop.bll.csproj", "{A949A4B3-50DF-4B1A-AB23-6FA2BF70E4D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandMadeShop.bll.models", "HandMadeShop.bll.models\HandMadeShop.bll.models.csproj", "{A84772B2-B770-4596-82DE-C4BF993F5DE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{26B2A912-C0C9-48AC-8ED6-322D907DE7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26B2A912-C0C9-48AC-8ED6-322D907DE7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26B2A912-C0C9-48AC-8ED6-322D907DE7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A949A4B3-50DF-4B1A-AB23-6FA2BF70E4D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A949A4B3-50DF-4B1A-AB23-6FA2BF70E4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A949A4B3-50DF-4B1A-AB23-6FA2BF70E4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A949A4B3-50DF-4B1A-AB23-6FA2BF70E4D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A84772B2-B770-4596-82DE-C4BF993F5DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84772B2-B770-4596-82DE-C4BF993F5DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84772B2-B770-4596-82DE-C4BF993F5DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84772B2-B770-4596-82DE-C4BF993F5DE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

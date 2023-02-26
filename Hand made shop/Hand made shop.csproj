@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HandMadeShop.bll\HandMadeShop.bll.csproj" />
     <ProjectReference Include="..\HandMadeShop.dal.context\HandMadeShop.dal.context.csproj" />
   </ItemGroup>
 
