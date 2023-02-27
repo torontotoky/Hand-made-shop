@@ -6,5 +6,6 @@
         public string Name { get; set; }
         public string Discription { get; set; }
         public string Size { get; set; }
+        public List<BMaterial> Materials { get; set; } = new();
     }
 }

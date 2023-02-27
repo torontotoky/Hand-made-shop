@@ -20,6 +20,7 @@ namespace HandMadeShop.bll.Implementation
         public async Task<BToy> CreateToy(BToy bToy)
         {
             var newToy = await db.Toys.AddAsync(this.mapper.Map<Toy>(bToy));
+            db.SaveChanges();
             return this.mapper.Map<BToy>(newToy);
         }
 
@@ -29,10 +30,12 @@ namespace HandMadeShop.bll.Implementation
 
             if (toy == null)
             {
-                throw new Exception($"Buheirf с таким {id} не найдена");
+                throw new Exception($"Игрушка с таким {id} не найдена");
             }
 
             db.Toys.Remove(toy);
+
+            db.SaveChanges();
         }
 
         public BToy GetToy(int id)
@@ -59,7 +62,13 @@ namespace HandMadeShop.bll.Implementation
             toy.Discription = bToy.Discription;
             toy.Name = bToy.Name;
 
+            var materialsIds = bToy.Materials.Select(m => m.Id); //Взяли id, которые пришли с bToy
+            var materials = db.Materials.Where(m => materialsIds.Contains(m.Id)).ToList(); // Получили список id из таблицы мариалов бд, которые совпали с bToy
+
+            toy.Materials = materials;
+
             db.Toys.Update(toy);
+            db.SaveChanges();
 
             return bToy;
         }

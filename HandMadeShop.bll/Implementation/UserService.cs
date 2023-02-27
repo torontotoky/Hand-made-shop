@@ -19,6 +19,7 @@ namespace HandMadeShop.bll.Implementation
         public async Task<BUser> CreateUser(BUser bUser)
         {
             var newUser = await db.Users.AddAsync(this.mapper.Map<User>(bUser));
+            db.SaveChanges();
             return this.mapper.Map<BUser>(newUser);
         }
 
@@ -30,6 +31,7 @@ namespace HandMadeShop.bll.Implementation
                 throw new Exception($"Пользователь с таким {id} не найден");
             }
             db.Users.Remove(user);
+            db.SaveChanges();
         }
 
         public BUser GetUser(int id)
@@ -59,7 +61,7 @@ namespace HandMadeShop.bll.Implementation
             user.IsAdmin = bUser.IsAdmin;
 
             db.Users.Update(user);
-
+            db.SaveChanges();
             return bUser;
         }
     }
