@@ -11,6 +11,7 @@ namespace Hand_made_shop.Configs
             CreateMap<BUser, User>().ReverseMap();
             CreateMap<BToy, Toy>().ReverseMap();
             CreateMap<BMaterial, Material>().ReverseMap();
+            CreateMap<BPurchase, Purchase>().ReverseMap();
         }
     }
 }
