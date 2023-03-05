@@ -2,7 +2,7 @@
 
 namespace HandMadeShop.bll.Interfaces
 {
-    internal interface IPurchaseService
+    public interface IPurchaseService
     {
         public Task<BPurchase> CreatePurchase(BPurchase bPurchase);
         public BPurchase UpdatePurchase(BPurchase bPurchase);

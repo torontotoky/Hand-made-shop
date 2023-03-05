@@ -19,9 +19,10 @@ namespace HandMadeShop.bll.Implementation
 
         public async Task<BMaterial> CreateMaterial(BMaterial bMaterial)
         {
-            var newMaterial = await db.Materials.AddAsync(this.mapper.Map<Material>(bMaterial));
-            db.SaveChanges();
-            return this.mapper.Map<BMaterial>(newMaterial);
+            var material = this.mapper.Map<Material>(bMaterial);
+            await db.Materials.AddAsync(material);
+            await db.SaveChangesAsync();
+            return this.mapper.Map<BMaterial>(material);
         }
 
         public void DeleteMaterial(int id)

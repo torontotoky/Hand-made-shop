@@ -6,7 +6,7 @@ using HandMadeShop.dal.entites;
 
 namespace HandMadeShop.bll.Implementation
 {
-    internal class UserService : IUserService
+    public class UserService : IUserService
     {
         private readonly ApplicationContext db;
         private readonly IMapper mapper;
